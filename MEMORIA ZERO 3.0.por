@@ -3,6 +3,7 @@ programa {
   caracter parar
   funcao inicio() {
     cadeia acao
+    escreva("\n ##  ##    ####    ##  ##    ####    #####     ###      ####             ######    ####    #####     ####\n #######  ##  ##   #######  ##  ##   ##  ##     ##         ##               ##    ##  ##   ##  ##   ##  ##\n #######  ######   #######  ##  ##   ##         ##      #####              ##     ######   ##       ##  ##\n ## # ##  ##       ## # ##  ##  ##   ##         ##     ##  ##             ##      ##       ##       ##  ##\n ##   ##   #####   ##   ##   ####    ##        ####     #####            ######    #####   ##        ####\n\n")
     escreva("\nVocê acorda sem lembrar de nada. \nNota que está em um elevador, você olha em volta e tenta lembrar quem você é, e o que está fazendo nesse lugar desconhecido. \nDe repente, a porta do elevador se abre para uma sala escura, nesta sala há uma porta e na parede, decorações.\n")
     escreva("\nO que você vai olhar primeiro? (Porta, Elevador, Parede): ")
     leia(acao)
@@ -14,7 +15,6 @@ programa {
       escreva("A porta está trancada por uma senha.\n")
       escreva("\nO que você vai olhar agora?: ")
       leia(acao)
-      pare
             escolha(acao){
             caso "parede":
             escreva("\nTem alguns vasos de plantas e alguns quadros, porém você não encontra nada.\n")
@@ -25,12 +25,10 @@ programa {
             escreva("Você percebe um barulho familiar, e percebe que é código morse, o código é \n..--- ..--- .---- ..--- .---- ----.")
             pare
             }
-      pare
       caso "parede":
       escreva("Tem alguns vasos de plantas e alguns quadros, porém você não encontra nada.")
       escreva("\nO que você vai examinar agora?: ")
       leia(acao)
-      pare
             escolha(acao){
             caso "porta":
             escreva("\nA porta está trancada por uma senha.")
@@ -38,7 +36,6 @@ programa {
             leia(acao)
             pare
             }
-      pare
       escolha(acao){
       caso "elevador":
       escreva("\nVocê percebe um barulho familiar, e percebe que é código morse, o código é \n..--- ..--- .---- ..--- .---- ----.")
