@@ -78,7 +78,6 @@ programa {
       escreva("\nVocê ouve sons distorcidos e uma voz confusa dizendo frases desconexas. Nada útil é compreendido.")
       escreva("\nO que você vai examinar agora?: ")
       leia(acao)
-      pare
             escolha(acao){
             caso "espelho":
             escreva("\nAo pegar o espelho quebrado, você sente algo solto atrás dele. Ao removê-lo, encontra uma folha com uma frase: “A resposta está nas posições onde as letras fazem fila.” e, no verso da folha um código escrito: 10. 15. 1. 15")
@@ -88,7 +87,6 @@ programa {
       escreva("\nVocê abre o livro em uma página marcada. Há uma frase enigmática:\n “Palavras podem enganar, imagens também.”\nNão há pistas claras.")
       escreva("\nO que você vai examinar agora?: ")
       leia(acao)
-      pare
             escolha(acao){
             caso "espelho":
             escreva("\nAo pegar o espelho quebrado, você sente algo solto atrás dele. Ao removê-lo, encontra uma folha com uma frase: “A resposta está nas posições onde as letras fazem fila.” e, no verso da folha um código escrito: 10. 15. 1. 15")
@@ -221,7 +219,6 @@ programa {
             escreva("\nVocê vai até o computador, porém ele não funciona e nenhuma dica eminente.")
             escreva("\nO que você vai examinar agora?: ")
             leia(acao)
-            pare
                   escolha(acao){
                         caso "baú":
                         escreva("\nVocê abre o baú e vê algumas bonecas antigas, mais nada que pode te levar até o resultado.")
