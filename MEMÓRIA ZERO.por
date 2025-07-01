@@ -3,7 +3,7 @@ programa {
   caracter parar
   funcao inicio() {
     cadeia acao
-    escreva("\n ##  ##    ####    ##  ##    ####    #####     ###      ####             ######    ####    #####     ####\n #######  ##  ##   #######  ##  ##   ##  ##     ##         ##               ##    ##  ##   ##  ##   ##  ##\n #######  ######   #######  ##  ##   ##         ##      #####              ##     ######   ##       ##  ##\n ## # ##  ##       ## # ##  ##  ##   ##         ##     ##  ##             ##      ##       ##       ##  ##\n ##   ##   #####   ##   ##   ####    ##        ####     #####            ######    #####   ##        ####\n\n")
+    
     escreva("\nVocê acorda sem lembrar de nada. \nNota que está em um elevador, você olha em volta e tenta lembrar quem você é, e o que está fazendo nesse lugar desconhecido. \nDe repente, a porta do elevador se abre para uma sala escura, nesta sala há uma porta e na parede, decorações.\n")
     escreva("\nO que você vai olhar primeiro? (Porta, Elevador, Parede): ")
     leia(acao)
@@ -25,6 +25,7 @@ programa {
             escreva("Você percebe um barulho familiar, e percebe que é código morse, o código é \n..--- ..--- .---- ..--- .---- ----.")
             pare
             }
+      pare
       caso "parede":
       escreva("Tem alguns vasos de plantas e alguns quadros, porém você não encontra nada.")
       escreva("\nO que você vai examinar agora?: ")
@@ -45,6 +46,7 @@ programa {
       caso "221219":
       escreva("\nVocê tenta colocar a senha na porta e a porta se abre!")
       pare
+
       }
     }
     escreva("\nVocê percebe um barulho familiar, e percebe que é código morse, o código é \n..--- ..--- .---- ..--- .---- ----.\nTraduza o código morse: ")
@@ -119,7 +121,6 @@ programa {
       escreva("\nVocê tenta entender o que quer dizer os símbolos, porém por enquanto nada.\n")
       escreva("O que você vai examinar agora?: ")
       leia(acao)
-      pare
             escolha(acao){
             caso "sofá velho":
             escreva("\nVocê não encontra nada de útil.\n")
@@ -166,7 +167,7 @@ programa {
       }
       escolha(acao){
       caso "altar":
-      escreva("\nNada além de poeira velha.")
+      escreva("\nNada além de poeira.")
       escreva("\nO que você vai examinar agora?: ")
       leia(acao)
       pare
